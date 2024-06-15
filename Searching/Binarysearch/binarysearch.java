@@ -80,7 +80,7 @@ class plotter{
          FileWriter f2 = new FileWriter("binaryavg.txt");
          FileWriter f3 = new FileWriter("binaryworst.txt");
          int n,key,r;
-         n =2;
+         n =5;
          while (n<=1024){
             int A[] = new int[n];
             // BEST CASE
@@ -88,7 +88,7 @@ class plotter{
             {
                 A[i] = 1;
             }
-            int mid = (n-1)/2;
+            int mid = (n-1)/4;
             A[mid] = 0;
             s.count = 0;
             r = s.bsearchplot(A, 0,0 , n-1);
@@ -98,7 +98,6 @@ class plotter{
             {
                 A[i] = rand.nextInt()%n;
             }
-            key = A[(n-1)/2];
             s.count = 0;
             r = s.bsearchplot(A, -1, 0, n-1);
             f2.write(n+" "+r+"\n");
