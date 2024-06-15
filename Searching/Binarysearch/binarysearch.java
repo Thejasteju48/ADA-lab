@@ -1,4 +1,4 @@
-//package Searching.Binarysearch;
+package Searching.Binarysearch;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
