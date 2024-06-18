@@ -22,7 +22,6 @@ class sort{
     }
     private int partion(int A[],int low,int high)
     {
-        count = 0;
         int pivot = A[low];
         int i = low;
         int j = high;
