@@ -20,7 +20,7 @@ class sort{
         A[i] = A[j];
         A[j] = temp;
     }
-    public int partion(int A[],int low,int high)
+    private int partion(int A[],int low,int high)
     {
         count = 0;
         int pivot = A[low];
