@@ -14,7 +14,7 @@ class sort{
             qsort(A, pindex+1, high);
         }
     }
-    public void swap(int A[],int i,int j)
+    private void swap(int A[],int i,int j)
     {
         int temp = A[i];
         A[i] = A[j];
