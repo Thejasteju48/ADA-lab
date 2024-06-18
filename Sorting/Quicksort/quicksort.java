@@ -27,14 +27,15 @@ class sort{
         int i = low;
         int j = high;
         while (i<j){
-            while (A[i]<=pivot && i<high){
+            do{
                 count++;
                 i++;
-            }
-            while (A[j]>pivot && j>low){
+            } while (A[i]<pivot && i<high );
+            
+            do{
                 count++;
                 j--;
-            }
+            }while (A[j]>pivot && j>low);
             if(i<j)
             {
                 swap(A, i, j);
@@ -101,7 +102,7 @@ class plotter{
             //Avg case
             for(int i =0;i<n;i++)
             {
-                A[i] = rand.nextInt();
+                A[i] = rand.nextInt()%n;
             }    
             s.count =0;
             s.qsort(A, 0, n-1);
